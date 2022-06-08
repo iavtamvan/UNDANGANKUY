@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+</head>
+<body>
+<h1 onload="getParameters()"></h1>
+
+
+<script>
+    function getParameters() {
+        let params = new URLSearchParams(window.location.search);
+        let params_ijt = params.get("_ijt");
+        // document.write("<h1>" + params_ijt + "</h1>");
+        document.write(params_ijt);
+        // return params.get(parameterName)
+    }
+</script>
+</body>
+</html>
