@@ -130,7 +130,8 @@
             <h2>
                 <script>let params = new URLSearchParams(window.location.search);
                 let params_ijt = params.get("to");
-                document.write(params_ijt);</script>
+                let result = params_ijt.replaceAll("-", " ");
+                document.write(result);</script>
             </h2>
 <!--            <p> di Bandung </p>-->
         </div>
